@@ -2,7 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx
-  labels: sevice-demo
+  labels: 
+    purpose: sevice-demo
 spec:
   selector:
     purpose: service-demo
@@ -12,7 +13,6 @@ spec:
   -  protocol: TCP
      port: 80 # service port
      targetPort: 80 # cotainer port
-
 ---
 apiVersion: v1
 kind: Pod
