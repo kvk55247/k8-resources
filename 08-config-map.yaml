@@ -4,8 +4,7 @@ metadata:
   name: pod-config
   labels:
     purpose: config
-    environment: dev
-    project: roboshop
+    env: dev
 data:
   COURSE: "DEVOPS WITH AWS"
   DURATION: "120HRS"
