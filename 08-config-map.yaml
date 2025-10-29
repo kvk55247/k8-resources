@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Configmap
+meatdata: 
+  name: pod-config
+  labels:
+    purpose: demo
+    environment: dev
+    project: roboshop
+data:
+  COURSE: "DEVOPS WITH AWS"
+  DURATION: "120HRS"
+  TRAINER: "VAMSIKRISHNA"
