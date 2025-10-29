@@ -3,7 +3,7 @@ kind: Configmap
 meatadata: 
   name: pod-config
   labels:
-    purpose: demo
+    purpose: config
     environment: dev
     project: roboshop
 data:
