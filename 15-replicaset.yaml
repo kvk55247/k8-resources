@@ -3,9 +3,9 @@ kind: ReplicaSet
 metadata:
   name: nginx
   labels:
-  purpose: rs-demo
-  project: roboshop
-  app: nginx
+      purpose: rs-demo
+      project: roboshop
+      app: nginx
 spec:
   replicas: 3
   selector:
