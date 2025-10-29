@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadta:
+ name: labels
+ labels:
+  project: roboshop
+  componenet: cart
+  environment: dev
+  tier: backend
+spec: 
+  containers:
+  - name: nginx
+    image: nginx
