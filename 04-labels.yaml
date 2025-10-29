@@ -3,10 +3,10 @@ kind: Pod
 metadta:
  name: labels
  labels:
-  project: roboshop
-  component: cart
-  environment: dev
-  tier: backend
+    project: roboshop
+    component: cart
+    environment: dev
+    tier: backend
 spec: 
   containers:
   - name: nginx
