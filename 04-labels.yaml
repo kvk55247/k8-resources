@@ -4,7 +4,7 @@ metadta:
  name: labels
  labels:
   project: roboshop
-  componenet: cart
+  component: cart
   environment: dev
   tier: backend
 spec: 
