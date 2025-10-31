@@ -51,7 +51,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: ebs-static-demo
+  name: ebs-static
   labels: 
     pupose: ebs-static-demo
     project: roboshop
