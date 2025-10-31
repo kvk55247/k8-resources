@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:latest
+        image: nginx
 ---
 
 apiVersion: v1
@@ -32,9 +32,10 @@ kind: Pod
 metadata:
   name: nginx
   labels:
-    purpose: deployment-demo
-    env: dev
-    app: nginx
+        purpose: deployment-demo
+        project: roboshop
+        app: nginx
+       
 spec:
   containers:
   - name: nginx
@@ -50,7 +51,7 @@ metadata:
 spec:
   selector:
     purpose: deployment-demo
-    env: dev
+    project: roboshop
     app: nginx
   ports:
   -  protocol: TCP
