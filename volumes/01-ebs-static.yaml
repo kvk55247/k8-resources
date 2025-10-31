@@ -31,6 +31,9 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: nginx
+  labels:
+    pupose: ebs-static-demo
+    project: roboshop
 spec:
   nodeSelector:
     topology.kubernetes.io/zone: us-east-1a 
@@ -44,4 +47,21 @@ spec:
   - name: persistent-storage
     persistentVolumeClaim:
       claimName: ebs-static
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ebs-static-demo
+  labels: 
+    pupose: ebs-static-demo
+    project: roboshop
+spec:
+  type: LoadBalancer
+  selector:
+    pupose: ebs-static-demo
+    project: roboshop
+  ports:
+  -  protocol: TCP
+     port: 80 # service port
+     targetPort: 80 # cotainer port
   
